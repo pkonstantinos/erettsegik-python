@@ -43,10 +43,12 @@ def Feladat3():
 
 
 
-    if parosok > paratlanok:
+
+    if paros[hazszam.__len__()-1] == "0":
         print(f"3. feladat\nA páros oldalon adták el az utolsó telket.\nAz utolso telek házszáma: {parosok}\n")
     else:
         print(f"3. feladat\nA páratlan oldalon adták el az utolsó telket.\nAz utolso telek házszáma: {paratlanok}\n")
+
 
 
 
@@ -88,6 +90,8 @@ def Feladat6():
         if paros[i] == "1":
             f.write(str(hazszam[i]) + (" "*(int(hosszusag[i]) - str(hazszam[i]).__len__())))
     f.close()
+
+
 
 Feladat2()
 Feladat3()
