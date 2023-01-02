@@ -17,10 +17,9 @@ def Feladat2():
     print(f"A helyhatósági választáson {len(adatok)} képviselőjelölt indult.")
 
 def Feladat3():
-    #vezetek_nev = input("Vezeték Név: ")
-    #kereszt_nev = input("Kereszt Név: ")
-    vezetek_nev = "Hold"
-    kereszt_nev = "Ferenc"
+    vezetek_nev = input("Vezeték Név: ")
+    kereszt_nev = input("Kereszt Név: ")
+
     teljes_nev = (vezetek_nev + " " + kereszt_nev)
 
     for i in range(len(adatok)):
