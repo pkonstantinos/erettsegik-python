@@ -75,8 +75,9 @@ for i in range(10):
     random_temakor = random.choice(list(temakor_dict))
     random_kerdes = random.choice(temakor_dict.get(random_temakor))
     while random_kerdes in random_Temakorok_7:
-        random_kerdes = 0
+        random_temakor = random.choice(list(temakor_dict))
         random_kerdes = random.choice(temakor_dict.get(random_temakor))
+        print(random_kerdes)
     random_Temakorok_7.append(random_kerdes)
 
 cf = open("tesztfel.txt", "w")
